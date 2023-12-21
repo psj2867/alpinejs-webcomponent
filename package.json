@@ -1,0 +1,31 @@
+{
+  "name": "alpinejs-webcomponent",
+  "version": "1.0.2",
+  "description": "Web Components addapter for Apine.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psj2867/alpinejs-webcomponent.git"
+  },
+  "author": "psj2867",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psj2867/alpinejs-webcomponent/issues"
+  },
+  "homepage": "https://github.com/psj2867/alpinejs-webcomponent#readme",
+  "devDependencies": {
+    "esbuild": "^0.19.10"
+  },
+  "keywords": [
+    "Alpine",
+    "Alpine JS",
+    "Alpine JS Plugin",
+    "Alpine JS Plugins",
+    "Alpine JS Component",
+    "Alpine JS Components",
+    "HTML Components"
+  ]
+}
