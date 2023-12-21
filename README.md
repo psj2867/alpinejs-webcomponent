@@ -55,3 +55,30 @@ Web Components addapter for Apine.js
     </div>
   </template>
 ```
+
+```
+    <div x-data="{text:''}">
+        <x-c3>
+            btn name
+            <textarea slot="content" x-model="text"></textarea>
+        </x-c3>
+        <div x-text="text"></div>
+    </div>
+    
+  <template x-webcomponent="x-c3">
+    <style>
+      div {
+        border: 2px black solid;
+      }
+      .c {
+        border: 1px red solid;
+      }
+    </style>
+    <div x-data="{expanded :false}">
+      <button @click="expanded = ! expanded"><slot></slot></button> 
+      <div class="c" x-show="expanded">
+          <slot name="content"></slot>
+      </div>
+    </div>
+  </template>
+```
