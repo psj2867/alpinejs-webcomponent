@@ -24,3 +24,34 @@ Web Components addapter for Apine.js
     <slot x-init="console.info($el.assignedNodes()[0])"></slot>
   </template>
 ```
+
+```
+  <div  x-data="">
+    <input type="button" :value="open" @click="open = !open">
+    <x-c2>
+      btn name
+      <div slot="content">Lorem ipsum</div>
+    </x-c2>
+  </div>
+
+  <template x-webcomponent="x-c2">
+    <style>
+      div {
+        border: 2px black solid;
+      }
+      .c {
+        border: 1px red solid;
+      }
+    </style>
+    <div x-data="{expanded :false}">
+      <button @click="expanded = ! expanded"><slot></slot></button> 
+      <div class="c" x-show="expanded">
+          <slot name="content"></slot>
+      </div>
+      
+      <template x-if="typeof open !== 'undefined'" >
+          <span x-modelable="expanded" x-model="open"></span>      
+      </template>
+    </div>
+  </template>
+```
