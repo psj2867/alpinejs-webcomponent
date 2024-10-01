@@ -1,7 +1,7 @@
 Web Components addapter for Apine.js
 
 ```
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs-webcomponent@1.0.1/dist/component.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs-webcomponent@1.0.2/dist/component.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
   <div>
     <template x-data x-for="a in [1,2,3,4]">
