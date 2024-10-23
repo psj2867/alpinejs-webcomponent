@@ -16,7 +16,7 @@ document.addEventListener('alpine:init', () => {
     }));
 })
 ```
-
+# DEPRECATED  
 ~~Web Components addapter for Apine.js~~
 
 ```
