@@ -1,4 +1,23 @@
-Web Components addapter for Apine.js
+# recoomend - just use plain alpine method
+
+```
+<div x-data="dropdown" x-bind="bind"></div>
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('dropdown', () => ({
+        show: false,
+
+        bind: {
+            ['x-html']() { return `
+                <button @click="show = !show">Click me!</button>
+                <div x-show="show">Hello World</div>
+            `},
+        },
+    }));
+})
+```
+
+~~Web Components addapter for Apine.js~~
 
 ```
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs-webcomponent@1.0.2/dist/component.min.js"></script>
